@@ -1227,4 +1227,136 @@ footer .social-media .social-links:hover {
 footer .social-media .social-links img {
   width: 25px;
 }
+
+.mnt-btn, .mint .mint-header .mint-header-btn, .mint-body .mintnow-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 38px;
+  border: 0;
+  background-color: #f9b224;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: all 400ms cubic-bezier(0.29, 0.9, 0.26, 1);
+  transition: all 400ms cubic-bezier(0.29, 0.9, 0.26, 1);
+  outline: none;
+}
+
+.mnt-btn:hover, .mint .mint-header .mint-header-btn:hover, .mint-body .mintnow-btn:hover {
+  color: #000000;
+  background-color: #e59a06;
+}
+
+.mint {
+  position: relative;
+  padding: 2% 0%;
+}
+
+.mint .mint-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+@media (max-width: 575.98px) {
+  .mint .mint-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15%;
+  }
+}
+
+.mint .mint-header .mint-header-top {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: Roboto-Bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .mint .mint-header .mint-header-top {
+    margin-bottom: 14px;
+  }
+}
+
+.mint .mint-header .mint-header-btn:hover {
+  background-color: #36c555 !important;
+  color: #ffffff;
+}
+
+.mint-body {
+  padding: 5% 0%;
+}
+
+.mint-body .mint-bx-title {
+  color: #ffffff;
+  margin-bottom: 10%;
+  font-family: Roboto-Bold;
+  font-size: 28px;
+}
+
+.mint-body .mint-bx-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 5%;
+}
+
+.mint-body .mint-bx-list .mint-bx-item {
+  border: 2px solid #f9b224;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 2%;
+  padding: 14px 0px;
+  color: #ffffff;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mint-body .mintnow-btn {
+  width: 240px;
+  height: 70px;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.mint-body .mint-amt {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.mint-bx-img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.mint-bx-img img {
+  width: 90%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */

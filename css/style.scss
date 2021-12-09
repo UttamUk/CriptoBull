@@ -925,3 +925,103 @@ footer{
         }
     }
 }
+
+
+
+.mnt-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 38px;
+    border: 0;
+    background-color: hsl(40, 95%, 56%);
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 400ms cubic-bezier(0.29, 0.9, 0.26, 1);
+    outline: none;
+    &:hover{
+        // transform: scale(1.01);
+        color: #000000;
+        background-color: hsl(40, 95%, 46%);
+    }  
+}
+
+.mint{
+    position: relative;
+    padding: 2% 0%;
+    .mint-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4%;
+        @include xsm{
+            flex-direction: column;
+            margin-bottom: 15%;
+        }
+        .mint-header-top{
+            color: #ffffff;
+            font-size: 40px;
+            font-family: Roboto-Bold;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            @include xsm{
+                margin-bottom: 14px;
+            }
+        }
+        .mint-header-btn{
+            @extend .mnt-btn;
+            &:hover{
+                background-color: rgb(54, 197, 85) !important;
+                color: #ffffff;
+            }
+        }
+    }
+}
+.mint-body{
+    padding: 5% 0%;
+    .mint-bx-title{
+        color: #ffffff;
+        margin-bottom: 10%;
+        font-family: Roboto-Bold;
+        font-size: 28px;
+    }
+    .mint-bx-list{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 5%;
+        .mint-bx-item{
+            border: 2px solid hsl(40, 95%, 56%);
+            border-left: 0;
+            border-right: 0;
+            margin-bottom: 2%;
+            padding: 14px 0px;
+            color: #ffffff;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .mintnow-btn{
+        @extend .mnt-btn;
+        width: 240px;
+        height: 70px;
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    .mint-amt{
+        font-size: 18px;
+        color: #ffffff;
+    }
+}
+.mint-bx-img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    img{
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+    }
+}
