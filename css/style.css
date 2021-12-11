@@ -76,6 +76,9 @@ header .navbar {
   header .navbar {
     padding: 3% 2.5%;
     top: 0;
+    background: #070707;
+    -webkit-box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.145);
+            box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.145);
   }
 }
 
@@ -83,6 +86,9 @@ header .navbar {
   header .navbar {
     padding: 3% 2.5%;
     top: 0;
+    background: #070707;
+    -webkit-box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.145);
+            box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.145);
   }
 }
 
@@ -94,7 +100,7 @@ header .navbar {
 }
 
 header .navbar.blackto {
-  background: #20232C;
+  background: #070707;
   -webkit-box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.145);
           box-shadow: 0px 2px 10px rgba(12, 12, 12, 0.145);
   padding: 1% 11%;
@@ -874,10 +880,30 @@ a, button {
   margin-bottom: 30px;
 }
 
+@media (max-width: 575.98px) {
+  .roadmap-box .roadmap-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .roadmap-box .roadmap-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 .roadmap-box .roadmap-title {
   color: #ffffff;
   font-size: 28px;
   margin-bottom: 5%;
+}
+
+@media (max-width: 575.98px) {
+  .roadmap-box .roadmap-title {
+    font-size: 20px;
+  }
 }
 
 .roadmap-box .roadmap-content {
@@ -889,6 +915,18 @@ a, button {
 
 .roadmap-box .roadmap-content:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .roadmap-box .roadmap-content {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .roadmap-box .roadmap-content {
+    font-size: 14px;
+  }
 }
 
 #roadmap.owl-theme .owl-nav .owl-prev, #roadmap.owl-theme .owl-nav .owl-next {
@@ -917,6 +955,24 @@ a, button {
           justify-content: center;
 }
 
+@media (max-width: 575.98px) {
+  #roadmap.owl-theme .owl-nav .owl-prev, #roadmap.owl-theme .owl-nav .owl-next {
+    width: 30px;
+    height: 30px;
+    right: 36px;
+    top: -12%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #roadmap.owl-theme .owl-nav .owl-prev, #roadmap.owl-theme .owl-nav .owl-next {
+    width: 40px;
+    height: 40px;
+    right: 36px;
+    top: -10%;
+  }
+}
+
 #roadmap.owl-theme .owl-nav .owl-next {
   right: 0;
 }
@@ -931,6 +987,18 @@ a, button {
   color: #d1d1d1;
   margin: 0 auto;
   margin-bottom: 5%;
+}
+
+@media (max-width: 575.98px) {
+  .team .team-content {
+    width: 95%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .team .team-content {
+    width: 90%;
+  }
 }
 
 .team .tm-bx {
